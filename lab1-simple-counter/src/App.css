@@ -1,0 +1,30 @@
+section{
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+.counter{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(52, 140, 217);
+}
+section h1{
+  font-size: 3rem;
+  color: rgb(16, 81, 138);
+}
+.counter p,.counter button{
+  flex-basis: 33%;
+  font-size: 2rem;
+  padding: 30px 10px;
+  color: #fff;
+}
+.counter button{
+  background-color: rgb(3, 62, 104);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.counter button:hover{
+  background-color: rgb(135, 199, 255);
+}
