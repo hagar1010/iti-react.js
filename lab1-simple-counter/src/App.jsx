@@ -5,8 +5,8 @@ import ClassCounter from './ClassCounter';
 function App() {
   return (
     <>
-      <FunctionCounter />
-      <ClassCounter/>
+      <FunctionCounter text={"From App"}/>
+      <ClassCounter text={"From App"}/>
     </>
   );
 }
