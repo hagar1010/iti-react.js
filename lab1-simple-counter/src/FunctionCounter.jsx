@@ -22,4 +22,6 @@ function FunctionCounter(props) {
     )
 }
 
-export default FunctionCounter
+export default FunctionCounter    
+//for pure componant:
+// export default memo(FunctionCounter)

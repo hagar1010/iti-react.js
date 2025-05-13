@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class ClassCounter extends React.Component {
+export default class ClassCounter extends React.Component {//or =pure componant
     constructor(props) {
         super(props)
         this.state = {
