@@ -1,0 +1,20 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s;
+}
+body{
+  background-color: rgba(247, 241, 255, 0.566);
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+header a{
+  color: #fff;
+}
+.active {
+  color: #d3b3ff;
+}

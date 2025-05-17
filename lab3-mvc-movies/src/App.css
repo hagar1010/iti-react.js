@@ -1,0 +1,186 @@
+/*-------------------------------header----------------------------------*/
+h1 {
+  font-size: 3.1rem;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  background-color: #3e2a47;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header {
+  background-color: #2c1f3e;
+}
+
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 150px;
+}
+
+nav .search {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+nav .search input {
+  width: 90%;
+  border: 0;
+  outline: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 30px;
+  color: #fff;
+}
+
+nav ul li:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+nav ul li.active:hover {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------movies----------------------------------*/
+.title {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px auto 20px;
+}
+
+.movies-container {
+  width: 85%;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.movie-card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 0.5px solid #eee;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.movie-card .text-box {
+  padding: 0 10px;
+}
+
+.movie-card h2 {
+  margin: 5px 0;
+  font-size: 1.3rem;
+}
+
+.movie-card p {
+  color: #777;
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.img-holder{
+  position: relative;
+}
+.img-holder img {
+  width: 100%;
+  height: 350px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.img-holder svg{
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
+  background-color: #000;
+  border: 1px solid #ccc;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+}
+.img-holder svg text{
+  fill: #fff;
+}
+
+
+
+/*-------------------------------pagination----------------------------------*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 20px auto 100px;
+}
+
+.pagination button {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #3e2a47;
+  border: 0;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #5f4287;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.pagination p {
+  font-size: 1.3rem;
+  cursor: pointer;
+}

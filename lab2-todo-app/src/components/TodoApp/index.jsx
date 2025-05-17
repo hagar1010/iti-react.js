@@ -21,20 +21,26 @@ const TodoApp = () => {
         newTodos.splice(idx, 1)
         setTodos(newTodos)
     }
+    console.log(todos.length);
 
     return (
         <section>
             <TodoInput addTodo={addTodo} />
             <div>
-                {todos.map((todo, idx) => {
-                    // console.log(uuid());
-                    return <TodoItem
-                        key={idx}
-                        todo={todo}
-                        index={idx}
-                        deleteTodo={deleteTodo}
-                        toggleTodo={toggleTodo} />
-                })}
+                {
+                    todos.length != 0 ?
+                        todos.map((todo, idx) => {
+                            // console.log(uuid());
+                            return <TodoItem
+                                key={idx}
+                                todo={todo}
+                                index={idx}
+                                deleteTodo={deleteTodo}
+                                toggleTodo={toggleTodo} />
+                        })
+                        :
+                        <h2>NO TODOS</h2>
+                }
             </div>
         </section>
     )
